@@ -1,2 +1,2 @@
-Sistem Informasi Orang Hilang
+Sistem Informasi Orang Hilang.
 Untuk Tugas Aja
