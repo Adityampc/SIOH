@@ -3,6 +3,12 @@
 header('Content-Type: application/json');
 $response = ['statusCode'=>200,'message'=>'Berhasil Membuat Laporan Orang Hilang'];
 $target_dir = "images/user/";
+
+if(!file_exists($target_dir))
+{
+    mkdir($target_dir,0777);
+}
+
 $filename = time(). basename($_FILES["foto"]["name"]);
 $target_file = $target_dir .$filename;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
